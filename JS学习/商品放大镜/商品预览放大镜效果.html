@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/detail.js"></script>
+    <style>
+        .preview_img{
+            position: relative;
+            height: 398px;
+            width: 398px;
+            border: 1px solid #ccc;
+        }
+        .mask{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: #fede4f;
+            opacity: .5;
+            border: 1px solid #ccc;
+            cursor: move;
+        }
+        .big{
+            display: none;
+            position: absolute;
+            left: 410px;
+            top: 0;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            z-index: 9999;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .big img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview_img">
+        <img src="img/s3.png" alt="">
+        <div class="mask"></div>
+        <div class="big">
+            <img src="img/big.jpg" alt="" class="bigImg">
+        </div>
+    </div>
+</body>
+</html>
